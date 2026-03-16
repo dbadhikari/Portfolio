@@ -1,18 +1,19 @@
-import HomePage from './HomePage'
-import { useEffect, useState } from 'react'
+
+import { useEffect} from 'react'
 import {motion} from "motion/react"
+import { useNavigate } from 'react-router-dom'
 
 const LandingPage = () => {
-  const [welcome, setwelcome] = useState(true)
+  const nav=useNavigate()
   useEffect(()=>{
        setTimeout(()=>{
-        setwelcome(false)
-    },4000)
+        nav("/home")
+    },3000)
   },[])
    
   return (
     <div>
-        {welcome ? (
+     
              <motion.div 
         animate={{
             opacity:0
@@ -54,9 +55,12 @@ const LandingPage = () => {
             
             Aspiring MERN Stack Developer
           </motion.h2>
-       </motion.div>):(<HomePage/>)}
-        
+       </motion.div>
       
+
+   
+        
+    
         
         
     </div>
