@@ -36,7 +36,7 @@ const LandingPage = () => {
             delay:0.3
           }}
           className='text-4xl font-extrabold text-white'>
-            Hi, I'm Dipu Adhikari 
+            Hi, I'm Das Bahadur Adhikari 
           </motion.h1>
             <motion.h2
           initial={{
