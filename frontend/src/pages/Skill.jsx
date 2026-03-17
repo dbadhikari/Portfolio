@@ -6,7 +6,7 @@ import {motion} from "motion/react"
 const Skill = () => {
 
   return (
-    <div className='h-screen w-full p-20 text-white bg-[#121e28] '>
+    <div className='min-h-screen w-full p-20 text-white bg-[#121e28] '>
 
        <motion.h1
        initial={{

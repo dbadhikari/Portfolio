@@ -15,7 +15,10 @@ const HomePage = () => {
 }
     
   return (
+    <div>
+      <div className="h-30 w-30 bg-amber-50 absolute"></div>
     <div className="relative ">
+      
       <Snow/>
        <section id="section1" className='min-h-screen w-full bg-[#121e28]  grid grid-cols-1 md:grid-cols-2 lg:px-20 md:px-12 px-6 text-white '>
         <motion.div
@@ -30,7 +33,7 @@ const HomePage = () => {
         className=" h-full lg:text-2xl md:text-xl text-sm order-2 md:order-1 flex flex-col items-center justify-center md:px-20 "> 
           <motion.h1
           className="md:text-6xl text-3xl font-extrabold mt-10">Hello, I'm</motion.h1>
-          <h1 className="md:text-6xl text-3xl  font-extrabold">Dipu Adhikari</h1>
+          <h1 className="md:text-6xl text-3xl  font-extrabold text-center">Das Bahadur Adhiakri</h1>
           <h1 className="md:text-3xl text-xl font-extrabold md:mt-15 mb-5">MERN Stack Developer</h1>
           <p className="md:text-xl text-xl font-extralight mb-10 text-center">I build modern and responsive web applications
            using React, Node.js, Express and MongoDB.</p>
@@ -72,6 +75,9 @@ const HomePage = () => {
           }}
           className="h-65 w-55 md:h-150 md:w-120  absolute rounded-full border-15 md:border-25 shadow-[0_0_40px_red] border-red-400 "></motion.div>
           <motion.img
+          initial={{
+            opacity:0
+          }}
            animate={{
             scale:[0,1],
             opacity:[0,1],
@@ -89,6 +95,7 @@ const HomePage = () => {
  
 
 
+    </div>
     </div>
   )
 }
